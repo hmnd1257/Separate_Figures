@@ -4,7 +4,6 @@
 When the image we want is combined with several images in one image, there are cases where we want to get only the image we want.
 It's not difficult when the amount of images you want to get is small, but when the amount of images that humans cannot execute, it's impossible to get the image you want.
 So, we propose a code that can easily get the image you want.
-* Input
 
 ## Requirements
 * Python >= 3.6.13
