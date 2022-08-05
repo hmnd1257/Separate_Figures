@@ -49,30 +49,18 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
 * `<extension>` When saving a separated image, the extension of the image is set (default: .jpeg).
 
 
-## Results
-![(6)](https://user-images.githubusercontent.com/91607691/170524359-370cd3cd-4c34-40dd-8ab4-23cbebf0af69.jpeg)
+## Example results
 
-* output
+<img src='./images/sample.jpeg' />
+<tr>
 
-![(6)_contour](https://user-images.githubusercontent.com/91607691/170524422-2f65e1f1-d04b-4cfb-ab0b-f9986afe599a.jpeg)  
-#
-
-![(6)_4](https://user-images.githubusercontent.com/91607691/170524597-d0f1ee8d-3cb2-46cb-bc55-b69c1d82c2bb.jpeg)  
-#
-
-![(6)_3](https://user-images.githubusercontent.com/91607691/170524594-151f2aff-db5c-489f-a20c-d0f0cdcb46d6.jpeg)  
-#
-
-![(6)_2](https://user-images.githubusercontent.com/91607691/170524593-df2ae4ba-b32a-49df-bbfe-090d3a49cb0b.jpeg)  
-#
-
-![(6)_1](https://user-images.githubusercontent.com/91607691/170524591-55eadb31-96bd-4507-8142-07cdf3d92336.jpeg)  
-#
-
-
-
-
-
+<table>
+<tr>
+<td><img src='./images/sample_results_1.jpeg'></td>
+<td><img src='./images/sample_results_2.jpeg'></td>
+<td><img src='./images/sample_results_3.jpeg'></td>
+<td><img src='./images/sample_results_4.jpeg'></td>
+</table>
 
 # Installation
 * Clone this repo:
