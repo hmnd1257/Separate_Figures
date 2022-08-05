@@ -82,5 +82,6 @@ It is separated image.
 * Clone this repo:
 ```
 git clone https://github.com/hmnd1257/Separate_Figures.git
+cd Separate_Figures
 ```
 
