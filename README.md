@@ -9,7 +9,9 @@ So, we propose a code that can easily get the image you want.
 * Python >= 3.6.13
 * opencv >= 4.6.0
 
-# Installation
+## Getting Started
+
+### Installation
 * Clone this repo:
 ```
 git clone https://github.com/hmnd1257/Separate_Figures.git
@@ -54,12 +56,40 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
 * `<extension>` When saving a separated image, the extension of the image is set (default: .jpeg).
 
 
+
+<table style="float:center">
+ <tr>
+ <th><B>Input</B></th>
+ </tr>
+  <td>
+   <img src='./images/sample.jpeg' width="150" height="150"></td>
+  </td>
+</table>
+
+<table style="float:center">
+ <tr>
+ <th><B>Output</B></th>
+ </tr>
+  <td>
+  <img src='./images/sample_results_1.jpeg'>
+  </td>
+  <td>
+   <img src='./images/sample_results_2.jpeg'>
+  </td>
+  <td>
+   <img src='./images/sample_results_3.jpeg'>
+  </td>
+  <td>
+   <img src='./images/sample_results_4.jpeg'>
+  </td>
+</table>
+
 ## Example results
 
 * Input
 <br>
 
-This is is an example input image.
+This is the input image.
 <tr>
 <td><img src='./images/sample.jpeg' width="200" height="200"></td>
 </tr>
@@ -73,8 +103,8 @@ This is the contour image.
 <td><img src='./images/sample_contour.jpeg' width="200" height="200"></td>
 </tr>
 
-This is separated image.
-<table>
+This is a separate image.
+<table style="float:center">
 <tr>
 <td><img src='./images/sample_results_1.jpeg'></td>
 <td><img src='./images/sample_results_2.jpeg'></td>
@@ -82,6 +112,3 @@ This is separated image.
 <td><img src='./images/sample_results_4.jpeg'></td>
 </tr>
 </table>
-
-
-
