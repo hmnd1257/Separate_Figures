@@ -17,7 +17,6 @@ cd Separate_Figures
 ```
 
 ## Run
-
 1. Our dataset structure
     * This is the dataset structure we used.
 ```
