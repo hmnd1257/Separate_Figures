@@ -75,7 +75,7 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
   <B>Contour</B>
   </th>
   <td>
-  <img src='./images/sample_contour.jpeg' width="190" height="190">
+  <img src='./images/sample_contour.jpeg' width="190" height="150">
   </td>
  </tr>
   <th>
