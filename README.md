@@ -80,7 +80,7 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
   </td>
  </tr>
   <th>
-  <B>Separated<br>image</B>
+  <B>Separated image</B>
   </th>
   <td>
   <img src='./images/sample_results_1.jpeg'>
