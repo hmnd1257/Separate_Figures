@@ -21,8 +21,8 @@ cd Separate_Figures
 1. Our dataset structure
     * This is the dataset structure we used.
 ```
-dataset_sample/
-    |____XXXX.jpeg/ # [.png, .jpg] format is also acceptable.
+dataset/
+    |____XXXX.jpeg # [.png, .jpg] format is also acceptable.
     |____OOOO.jpeg 
     |____....
 ```
@@ -30,7 +30,7 @@ dataset_sample/
     * If the save path doesn't exist, it is automatically created.
 ```bash
 # in <path-to-this-repo>/
-python main.py --baseroot './dataset_sample' --contour './results/contour' --ROI './results/ROI'
+python main.py --baseroot './dataset' --contour './results/contour' --ROI './results/ROI'
 ```
 
 ## Run on your own dataset
@@ -60,7 +60,7 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
 * Input
 <br>
 
-It is is an example input image.
+This is is an example input image.
 <tr>
 <td><img src='./images/sample.jpeg' width="200" height="200"></td>
 </tr>
@@ -68,13 +68,13 @@ It is is an example input image.
 * Output
 <br>
 
-It is the contour image.
+This is the contour image.
 <br>
 <tr>
 <td><img src='./images/sample_contour.jpeg' width="200" height="200"></td>
 </tr>
 
-It is separated image.
+This is separated image.
 <table>
 <tr>
 <td><img src='./images/sample_results_1.jpeg'></td>
