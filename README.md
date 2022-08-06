@@ -49,8 +49,8 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
 
 **Arguments**
 * `<baseroot>` (required): path to the dataset directory.
-* `<contour>` (required): path to the save contour directory.
-* `<ROI>` (required): path to the save Region of Interest directory.
+* `<contour>` (required): path to the save contour image directory.
+* `<ROI>` (required): path to the save separated image directory.
 * `<padding>` Add a white background with padding technique to better find the Region of interest (default: True).
 * `<pixel>` Sets the padding size (default: 10).
 * `<extension>` When saving a separated image, the extension of the image is set (default: .jpeg).
@@ -73,10 +73,15 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
 
  <tr>
   <td>
+  <B>Contour</B>
+  </td>
+  <td>
   <img src='./images/sample_contour.jpeg' width="190" height="190">
   </td>
  </tr>
-
+  <td>
+  <B>Separated image</B>
+  </td>
   <td>
   <img src='./images/sample_results_1.jpeg'>
   </td>
