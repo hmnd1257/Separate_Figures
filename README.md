@@ -62,7 +62,7 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
  <th><B>Input</B></th>
  </tr>
   <td>
-   <img src='./images/sample.jpeg' width="150" height="150"></td>
+   <img src='./images/sample.jpeg' width="200" height="200"></td>
   </td>
 </table>
 
@@ -70,6 +70,13 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
  <tr>
  <th><B>Output</B></th>
  </tr>
+
+ <tr>
+  <td>
+  <img src='./images/sample_contour.jpeg' width="190" height="190">
+  </td>
+ </tr>
+
   <td>
   <img src='./images/sample_results_1.jpeg'>
   </td>
@@ -112,3 +119,6 @@ This is a separate image.
 <td><img src='./images/sample_results_4.jpeg'></td>
 </tr>
 </table>
+
+
+
