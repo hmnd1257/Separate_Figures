@@ -9,6 +9,13 @@ So, we propose a code that can easily get the image you want.
 * Python >= 3.6.13
 * opencv >= 4.6.0
 
+# Installation
+* Clone this repo:
+```
+git clone https://github.com/hmnd1257/Separate_Figures.git
+cd Separate_Figures
+```
+
 ## Run
 
 1. Our dataset structure
@@ -23,7 +30,7 @@ dataset_sample/
     * If the save path doesn't exist, it is automatically created.
 ```bash
 # in <path-to-this-repo>/
-python main.py --baseroot './dataset' --contour './results/contour' --ROI './results/ROI'
+python main.py --baseroot './dataset_sample' --contour './results/contour' --ROI './results/ROI'
 ```
 
 ## Run on your own dataset
@@ -77,10 +84,5 @@ It is separated image.
 </tr>
 </table>
 
-# Installation
-* Clone this repo:
-```
-git clone https://github.com/hmnd1257/Separate_Figures.git
-cd Separate_Figures
-```
+
 
