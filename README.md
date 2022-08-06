@@ -55,47 +55,6 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
 * `<pixel>` Sets the padding size (default: 10).
 * `<extension>` When saving a separated image, the extension of the image is set (default: .jpeg).
 
-
-
-<table style="float:center">
- <tr>
- <th><B>Input</B></th>
- </tr>
-  <td>
-   <img src='./images/sample.jpeg' width="200" height="200"></td>
-  </td>
-</table>
-
-<table style="float:center">
- <tr>
- <th><B>Output</B></th>
- </tr>
-
- <tr>
-  <th>
-  <B>Contour<br>image</B>
-  </th>
-  <td>
-  <img src='./images/sample_contour.jpeg' width="190" height="190">
-  </td>
- </tr>
-  <th>
-  <B>Separated image</B>
-  </th>
-  <td>
-  <img src='./images/sample_results_1.jpeg'>
-  </td>
-  <td>
-   <img src='./images/sample_results_2.jpeg'>
-  </td>
-  <td>
-   <img src='./images/sample_results_3.jpeg'>
-  </td>
-  <td>
-   <img src='./images/sample_results_4.jpeg'>
-  </td>
-</table>
-
 ## Results
 <table style="float:center">
  <tr>
