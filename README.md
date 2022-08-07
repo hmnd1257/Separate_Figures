@@ -9,6 +9,8 @@ So, we propose a code that can easily get the image you want.
 * Python >= 3.6.13
 * opencv >= 4.6.0
 
+
+
 ## Getting Started
 
 ### Installation
@@ -17,7 +19,12 @@ So, we propose a code that can easily get the image you want.
 git clone https://github.com/hmnd1257/Separate_Figures.git
 cd Separate_Figures
 ```
+* You can install all the requirements by executing below :
 
+```sh
+# in <path-to-this-repo>/
+pip install -r requirements.txt
+```
 ## Run
 1. Our dataset structure
     * This is the dataset structure we used.
@@ -28,32 +35,31 @@ dataset/
     |____....
 ```
 2. Run
-    * If the save path doesn't exist, it is automatically created.
+    * If the save path(contour, ROI images) doesn't exist, it is automatically created.
 ```bash
 # in <path-to-this-repo>/
-python main.py --baseroot './dataset' --contour './results/contour' --ROI './results/ROI'
+python main.py --baseroot './dataset' --results_dir './results'
 ```
 
 ## Run on your own dataset
 Step 1: Download your own images datasets.<br />
 Step 2: Open `main.py` in python idle.<br />
-Step 3: Modify Arguments to set baseroot, contour, ROI and other parameters.<br />
+Step 3: Modify Arguments to set `--baseroot`, `--results_dir` and other parameters.<br />
 Step 4: Run `main.py`
 
 
-**Example**: If you leave the other settings as default except for the path option, run the following command. :
+**Example**: If you leave the other settings as default except for the path option, run the following command :
 ```bash
 # in <path-to-this-repo>/
-python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI <ROI_save_path>
+python main.py --baseroot <your_image_baseroot> --results_dir <save_path>
 ```
 
 **Arguments**
-* `<baseroot>` (required): path to the dataset directory.
-* `<contour>` (required): path to the save contour image directory.
-* `<ROI>` (required): path to the save separated image directory.
-* `<padding>` Add a white background with padding technique to better find the Region of interest (default: True).
-* `<pixel>` Sets the padding size (default: 10).
-* `<extension>` When saving a separated image, the extension of the image is set (default: .jpeg).
+* `<--baseroot>` (required): Path to the dataset directory.
+* `<--results_dir>` (required): The path where the resulting image is saved.
+* `<--padding>` Add a white background with padding technique to better find the Region of interest (default: True).
+* `<--pixel>` Sets the padding size (default: 10).
+* `<--extension>` When saving a separated image, the extension of the image is set (default: .jpeg).
 
 ## Results
 <table style="float:center">
@@ -95,7 +101,7 @@ python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI 
   </td>
 </table>
 
-## Example results
+## Results
 
 * Input
 <br>
@@ -114,7 +120,7 @@ This is the contour image.
 <td><img src='./images/sample_contour.jpeg' width="200" height="200"></td>
 </tr>
 
-This is a separate image.
+This is a separated image.
 <table style="float:center">
 <tr>
 <td><img src='./images/sample_results_1.jpeg'></td>
