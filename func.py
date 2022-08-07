@@ -1,15 +1,6 @@
 #!/bin/python
 import cv2
 import os
-import argparse
-
-def str2bool(v):
-    if v.lower() in ('yes', 'true', 't', 'y', '1', True):
-        return True
-    elif v.lower() in ('no', 'false', 'f', 'n', '0', False):
-        return False
-    else:
-        raise argparse.ArgumentTypeError('Boolean value expected.')
 
 def createFolder(args):
     if os.path.exists(args) is False:
@@ -43,8 +34,8 @@ def RGB_Average(ROI):
 def separate_fig(args):
 
     # Create a folder if it does`t folder
-    cnt_folder = args.contour
-    ROI_folder = args.ROI
+    cnt_folder = args.results_dir + '/contour'
+    ROI_folder = args.results_dir + '/ROI'
     if os.path.exists(cnt_folder) is False:
         os.makedirs(cnt_folder)
         print('contour folder is created! : %s' % cnt_folder)
@@ -62,7 +53,7 @@ def separate_fig(args):
         print('The overall number of images equals to %d' % len(os.listdir(args.baseroot)))
 
         ## Read image
-        count = 0
+        img_cnt = 0
         for i in os.listdir(args.baseroot):
             filename = args.baseroot + '/' + i
 
@@ -98,19 +89,18 @@ def separate_fig(args):
                 # RGB average
                 R_avg, G_avg, B_avg = RGB_Average(ROI)
                 temp = max(R_avg, G_avg, B_avg) - min(R_avg, G_avg, B_avg)
-
                 if R_avg < 150 and G_avg < 150 and B_avg < 150 and temp < 15:
                     h, w, _ = ROI.shape  # h : ROI image height, w : ROI image width
 
                     # To classify images that are not well separated
-                    if not (h > (w+ 0.3*w) or w > (h + 0.3*h) or h > w*2 or w > h*2 or 10 <= (h-w) <= 20 or (h-10) > w):
+                    if not (h > (w + 0.3*w) or w > (h + 0.3*h) or h > w*2 or w > h*2 or 10 <= (h-w) <= 20):# or (h-10) > w
                         filename_ROI = i[:-5] + "_" + str(ROI_number + 1) + args.extension
-                        cv2.imwrite(args.ROI + "/{}".format(filename_ROI), ROI)
+                        cv2.imwrite(ROI_folder + "/{}".format(filename_ROI), ROI) # save ROI
 
                 ROI_number += 1
-            count += 1
+            img_cnt += 1
+
             filename_contour = i[:-5] + "_contour" + args.extension
+            cv2.imwrite(cnt_folder + "/{}".format(filename_contour), image) # save contour images
 
-            cv2.imwrite(args.contour + "/{}".format(filename_contour), image)
-
-            print('The image has been successfully separated and saved. [{} / {}]'.format(count, len(os.listdir(args.baseroot))))
+            print('The image has been successfully separated and saved. [{} / {}]'.format(img_cnt, len(os.listdir(args.baseroot))))
