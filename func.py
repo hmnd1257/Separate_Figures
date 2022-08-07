@@ -93,7 +93,7 @@ def separate_fig(args):
                     h, w, _ = ROI.shape  # h : ROI image height, w : ROI image width
 
                     # To classify images that are not well separated
-                    if not (h > (w + 0.3*w) or w > (h + 0.3*h) or h > w*2 or w > h*2 or 10 <= (h-w) <= 20):# or (h-10) > w
+                    if not (h > (w + 0.3*w) or w > (h + 0.3*h) or h > w*2 or w > h*2 or 10 <= (h-w) <= 20 or (h-10) > w):
                         filename_ROI = i[:-5] + "_" + str(ROI_number + 1) + args.extension
                         cv2.imwrite(ROI_folder + "/{}".format(filename_ROI), ROI) # save ROI
 
