@@ -12,7 +12,7 @@ So, we propose a code that can easily get the image you want.
 ## Getting Started
 
 ### Installation
-* Clone this repo:
+* Clone this repo :
 ```
 git clone https://github.com/hmnd1257/Separate_Figures.git
 cd Separate_Figures
