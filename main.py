@@ -2,7 +2,7 @@
 from func import *
 import argparse
 
-# python main.py --baseroot <your_image_baseroot> --contour <cnt_save_path> --ROI <ROI_save_path>
+# python main.py --baseroot <your_image_baseroot> --results_dir <save_path>
 
 ## setup arguments
 parser = argparse.ArgumentParser(description='Separating images from multiple merged images')
