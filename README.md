@@ -100,35 +100,3 @@ python main.py --baseroot <your_image_baseroot> --results_dir <save_path>
    <img src='./images/sample_results_4.jpeg'>
   </td>
 </table>
-
-## Results
-
-* Input
-<br>
-
-This is the input image.
-<tr>
-<td><img src='./images/sample.jpeg' width="200" height="200"></td>
-</tr>
-
-* Output
-<br>
-
-This is the contour image.
-<br>
-<tr>
-<td><img src='./images/sample_contour.jpeg' width="200" height="200"></td>
-</tr>
-
-This is a separated image.
-<table style="float:center">
-<tr>
-<td><img src='./images/sample_results_1.jpeg'></td>
-<td><img src='./images/sample_results_2.jpeg'></td>
-<td><img src='./images/sample_results_3.jpeg'></td>
-<td><img src='./images/sample_results_4.jpeg'></td>
-</tr>
-</table>
-
-
-
